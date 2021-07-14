@@ -23,6 +23,9 @@ public class UserService {
         return userRepository.findAll();
     }
 
+    public Collection<User> findUsersByFirstName(String name) {
+        return userRepository.findByFirstNameIgnoreCase(name);
+    }
 
     public User save(User user) {
         return userRepository.save(user);
@@ -32,4 +35,7 @@ public class UserService {
         return userRepository.findById(userId);
     }
 
+    public void delete(User user) {
+        userRepository.delete(user);
+    }
 }
