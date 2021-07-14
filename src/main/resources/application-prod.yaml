@@ -1,2 +1,5 @@
 ## Production application profile
 server.port: 9000
+
+# Still using h2 but persist data in a file
+DATABASE_URL: jdbc:h2:file:/data/demo
