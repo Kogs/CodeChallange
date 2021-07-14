@@ -17,6 +17,7 @@
 		<flyway.version>7.11.2</flyway.version>
 		<mapstruct.version>1.4.2.Final</mapstruct.version>
 		<lombok.version>1.18.20</lombok.version>
+		<springdoc.version>1.5.7</springdoc.version>
 	</properties>
 
 	<dependencies>
@@ -36,6 +37,13 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-jetty</artifactId>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-ui</artifactId>
+			<version>${springdoc.version}</version>
+		</dependency>
+
 
 		<dependency>
 			<groupId>org.projectlombok</groupId>
