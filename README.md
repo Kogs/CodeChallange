@@ -17,5 +17,5 @@ First run commands from building, then
 
 Profiles can get set over environment variables like so:
 
-`docker run --name -e PROFILE=prod CodeChallange codechallange:latest`
+`docker run --name CodeChallange -e PROFILE=prod  codechallange:latest`
 
